@@ -20,7 +20,7 @@ export KUBECONFIG=configs/config
 kubectl get nodes -o wide
 
 
-# There is one sample application also start which you can access by below url
+# There is one sample deployed, which you can access by below url
 echo "http://$(kubectl get svc nginx-service -o jsonpath='{.status.loadBalancer.ingress[0].ip}')"/
 ```
 
